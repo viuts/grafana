@@ -1,0 +1,22 @@
+{
+  "type": "datasource",
+  "name": "Oracle",
+  "id": "oci8",
+
+  "info": {
+    "description": "Oracle Data Source for Grafana",
+    "author": {
+      "name": "Grafana Project",
+      "url": "https://grafana.com"
+    },
+    "logos": {
+      "small": "img/oracle_logo.svg",
+      "large": "img/oracle_logo.svg"
+    },
+    "version": "5.0.0"
+  },
+
+  "alerting": true,
+  "annotations": true,
+  "metrics": true
+}

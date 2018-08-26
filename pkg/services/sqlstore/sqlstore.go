@@ -26,6 +26,7 @@ import (
 
 	_ "github.com/grafana/grafana/pkg/tsdb/mssql"
 	_ "github.com/lib/pq"
+	_ "github.com/mattn/go-oci8"
 	sqlite3 "github.com/mattn/go-sqlite3"
 )
 

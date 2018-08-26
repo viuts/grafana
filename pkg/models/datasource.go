@@ -20,6 +20,7 @@ const (
 	DS_POSTGRES      = "postgres"
 	DS_MYSQL         = "mysql"
 	DS_MSSQL         = "mssql"
+	DS_ORACLE        = "oralce"
 	DS_ACCESS_DIRECT = "direct"
 	DS_ACCESS_PROXY  = "proxy"
 )
@@ -70,6 +71,7 @@ var knownDatasourcePlugins = map[string]bool{
 	DS_POSTGRES:                 true,
 	DS_MYSQL:                    true,
 	DS_MSSQL:                    true,
+	DS_ORACLE:                   true,
 	"opennms":                   true,
 	"abhisant-druid-datasource": true,
 	"dalmatinerdb-datasource":   true,

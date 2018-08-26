@@ -78,6 +78,10 @@ func (m *RawSqlMigration) Mssql(sql string) *RawSqlMigration {
 	return m.Set(MSSQL, sql)
 }
 
+func (m *RawSqlMigration) Oracle(sql string) *RawSqlMigration {
+	return m.Set(ORACLE, sql)
+}
+
 type AddColumnMigration struct {
 	MigrationBase
 	tableName string

@@ -258,7 +258,7 @@
   branch = "master"
   name = "github.com/hashicorp/yamux"
   packages = ["."]
-  revision = "2658be15c5f05e76244154714161f17e3e77de2e"
+  revision = "3520598351bb3500a49ae9563f5539666ae0a27c"
 
 [[projects]]
   name = "github.com/inconshreveable/log15"
@@ -330,6 +330,12 @@
   packages = ["."]
   revision = "0360b2af4f38e8d38c7fce2a9f4e702702d73a39"
   version = "v0.0.3"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/mattn/go-oci8"
+  packages = ["."]
+  revision = "2caf1d290f51280ed5561adb09333f4eeeb52758"
 
 [[projects]]
   name = "github.com/mattn/go-sqlite3"
@@ -426,12 +432,6 @@
   packages = ["diffmatchpatch"]
   revision = "1744e2970ca51c86172c8190fadad617561ed6e7"
   version = "v1.0.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/shurcooL/sanitized_anchor_name"
-  packages = ["."]
-  revision = "86672fcb3f950f35f2e675df2240550f2a50762f"
 
 [[projects]]
   name = "github.com/smartystreets/assertions"
@@ -679,6 +679,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "cb8e7fd81f23ec987fc4d5dd9d31ae0f1164bc2f30cbea2fe86e0d97dd945beb"
+  inputs-digest = "f71527cd3ba9585a9851af3b43a22ec7a0b3089254cf5df342f55dff70f4e3c3"
   solver-name = "gps-cdcl"
   solver-version = 1

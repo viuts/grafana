@@ -12,6 +12,7 @@ const (
 	SQLITE   = "sqlite3"
 	MYSQL    = "mysql"
 	MSSQL    = "mssql"
+	ORACLE   = "oracle"
 )
 
 type Migration interface {
