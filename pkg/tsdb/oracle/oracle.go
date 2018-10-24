@@ -78,10 +78,24 @@ func (t *oracleRowTransformer) Transform(columnTypes []*sql.ColumnType, rows *co
 		typeName := columnTypes[i].DatabaseTypeName()
 		switch typeName {
 		case "SQLT_NUM":
-			if v, err := strconv.ParseFloat(values[i].(string), 64); err == nil {
+			if values[i] == nil {
+				values[i] = float64(0)
+			} else if v, err := strconv.ParseFloat(values[i].(string), 64); err == nil {
 				values[i] = v
 			} else {
 				t.log.Debug("Rows", "Error converting numeric to float", values[i].(string))
+			}
+		case "SQLT_CHR":
+			if values[i] == nil {
+				values[i] = ""
+			} else {
+				values[i] = values[i].(string)
+			}
+		case "SQLT_AFC":
+			if values[i] == nil {
+				values[i] = ""
+			} else {
+				values[i] = values[i].(string)
 			}
 		default:
 
